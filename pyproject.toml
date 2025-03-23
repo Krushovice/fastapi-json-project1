@@ -10,5 +10,6 @@ dependencies = [
     "fastapi-jsonapi>=3.0.0",
     "fastapi[standard]>=0.115.11",
     "pydantic>=2.10.6",
+    "pydantic-settings>=2.8.1",
     "sqlalchemy[asyncio]>=2.0.39",
 ]
