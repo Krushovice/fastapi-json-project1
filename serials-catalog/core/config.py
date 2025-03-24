@@ -33,7 +33,7 @@ class LoggingConfig(BaseModel):
 
 
 class DbConfig(BaseModel):
-    url = f"sqlite+aiosqlite:///{DB_PATH}"
+    url: str = f"sqlite+aiosqlite:///{DB_PATH}"
     echo: bool = False
     echo_pool: bool = False
     pool_size: int = 50
@@ -59,7 +59,7 @@ class Settings(BaseSettings):
         ),
     )
     logging: LoggingConfig = LoggingConfig()
-    db: DbConfig
+    db: DbConfig = DbConfig()
 
 
 # noinspection PyArgumentList
