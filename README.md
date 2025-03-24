@@ -3,8 +3,8 @@
 ### Сериал
 Поля:
 - "id" - уникальный идентификатор
-- "title" - название 
-- "description" - кратное описание 
+- "title" - название
+- "description" - кратное описание
 - "release_date" - дата выхода
 - "seasons" - кол-во сезонов
 - "genre" - many to many
@@ -14,7 +14,7 @@
 ### Жанр
 - "id" - уникальный идентификатор
 - "name, unique" - название, уникально
-- "description" - кратное описание 
+- "description" - кратное описание
 
 
 ### Возрастной рейтинг
@@ -35,10 +35,10 @@
 ### Сериал
 Поля:
 - "id" - bigint pk
-- "title" - str, not null, index 
-- "description" - not null, default '""' 
+- "title" - str, not null, index
+- "description" - not null, default '""'
 - "release_date" - "date", not null
-- "seasons" - "uint", default '1' 
+- "seasons" - "uint", default '1'
 - "genre" - many to many
 - "age_rating" - nullable
 
@@ -46,10 +46,10 @@
 ### Жанр
 Поля:
 - "id" - int pk
-- "name" - str, unique, not null, index 
-- "description" - not null, default '""' 
+- "name" - str, unique, not null, index
+- "description" - not null, default '""'
 
 
 ### Возрастной рейтинг
-- "name, unique" - str, unique, not null, index 
-- "description" - not null, default '""' 
+- "name, unique" - str, unique, not null, index
+- "description" - not null, default '""'
